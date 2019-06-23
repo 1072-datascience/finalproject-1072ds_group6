@@ -33,9 +33,7 @@ Rscript code/your_script.R --input data/training --output results/performance.ts
 * Input format
 
 * Any preprocessing?
-  * Handle missing data
-  * Scale value
-該筆資料皆已整理為類別型資料,且無缺失值
+該筆資料皆已整理為類別型資料,且無缺失值,因此沒對資料另外做處理
 
 ### code
 
@@ -49,11 +47,13 @@ Decision Tree,Naive Bayes,SVM,Random Forest,Xgboost
 * Which metric do you use 
   * precision, recall, R-square
 * Is your improvement significant?
+使用xgboost模型,明顯比起null model,以及其他model來得好
 * What is the challenge part of your project?
 
 ## Reference
 * Code/implementation which you include/reference (__You should indicate in your presentation if you use code for others. Otherwise, cheating will result in 0 score for final project.__)
 * Packages you use
+caret,e1071,DMwR,randomForest,xgboost.rpart
 * Related publications
 
 
