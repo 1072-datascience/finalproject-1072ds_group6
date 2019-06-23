@@ -29,17 +29,21 @@ Rscript code/your_script.R --input data/training --output results/performance.ts
 ### data
 
 * Source
+資料來自OpenML網站
 * Input format
+
 * Any preprocessing?
   * Handle missing data
   * Scale value
+該筆資料皆已整理為類別型資料,且無缺失值
 
 ### code
 
 * Which method do you use?
+Decision Tree,Naive Bayes,SVM,Random Forest,Xgboost
 * What is a null model for comparison?
 * How do your perform evaluation? ie. Cross-validation, or extra separated data
-
+先取出10%的test data,剩下90%的data使用10 cross-validation找出Accuracy最高的模型,之後將最佳的模型xgboost放入test data做預測
 ### results
 
 * Which metric do you use 
