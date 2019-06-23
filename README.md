@@ -49,7 +49,7 @@ Accuracy
 * Is your improvement significant?
 使用xgboost模型,明顯比起null model,以及其他model來得好
 * What is the challenge part of your project?
-找資料的過程中花較多的時間
+這份報告中,較大的挑戰為找到有興趣且適合做分類的資料
 ## Reference
 * Code/implementation which you include/reference (__You should indicate in your presentation if you use code for others. Otherwise, cheating will result in 0 score for final project.__)
 * Packages you use
