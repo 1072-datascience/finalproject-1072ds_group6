@@ -44,12 +44,12 @@ Decision Tree,Naive Bayes,SVM,Random Forest,Xgboost
 先取出10%的test data,剩下90%的data使用10 cross-validation找出Accuracy最高的模型,之後將最佳的模型xgboost放入test data做預測
 ### results
 
-* Which metric do you use 
+* Which metric do you use ?
 Accuracy
 * Is your improvement significant?
 使用xgboost模型,明顯比起null model,以及其他model來得好
 * What is the challenge part of your project?
-
+找資料的過程中花較多的時間
 ## Reference
 * Code/implementation which you include/reference (__You should indicate in your presentation if you use code for others. Otherwise, cheating will result in 0 score for final project.__)
 * Packages you use
