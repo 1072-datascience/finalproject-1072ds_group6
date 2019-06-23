@@ -31,6 +31,16 @@ Rscript code/your_script.R --input data/training --output results/performance.ts
 * Source
 資料來自OpenML網站
 * Input format
+[1] "having_IP_Address"           "URL_Length"                  "Shortining_Service"         
+[4] "having_At_Symbol"            "double_slash_redirecting"    "Prefix_Suffix"              
+[7] "having_Sub_Domain"           "SSLfinal_State"              "Domain_registeration_length"
+[10] "Favicon"                     "port"                        "HTTPS_token"                
+[13] "Request_URL"                 "URL_of_Anchor"               "Links_in_tags"              
+[16] "SFH"                         "Submitting_to_email"         "Abnormal_URL"               
+[19] "Redirect"                    "on_mouseover"                "RightClick"                 
+[22] "popUpWidnow"                 "Iframe"                      "age_of_domain"              
+[25] "DNSRecord"                   "web_traffic"                 "Page_Rank"                  
+[28] "Google_Index"                "Links_pointing_to_page"  
 
 * Any preprocessing?
 該筆資料皆已整理為類別型資料,且無缺失值,因此沒對資料另外做處理
@@ -49,7 +59,7 @@ Accuracy
 * Is your improvement significant?
 使用xgboost模型,明顯比起null model,以及其他model來得好
 * What is the challenge part of your project?
-這份報告中,較大的挑戰為找到有興趣且適合做分類的資料
+這份報告中,較大的挑戰為找有興趣且適合做分類的資料
 ## Reference
 * Code/implementation which you include/reference (__You should indicate in your presentation if you use code for others. Otherwise, cheating will result in 0 score for final project.__)
 * Packages you use
