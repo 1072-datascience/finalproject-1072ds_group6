@@ -53,6 +53,8 @@ id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | dou
 "DNSRecord"                   "web_traffic"                 "Page_Rank"                  
 "Google_Index"                "Links_pointing_to_page"  
 
+[Data_description](/docs/Phishing Websites Features.docx)
+
 * Any preprocessing?  
   
 該筆資料已依據各別變數的特性整理為類別型資料，且資料完美無缺失值，只對資料另做分析。  
@@ -85,25 +87,25 @@ xgb_cvmodel <- xgb.cv(data = dtrain, params = xgb.params, nfold = 10, nrounds = 
   
 Accuracy  
 
-method|	set	accuracy|	F1
+method	set|	**accuracy**|	F1
 ------|-------------|-----
-SVM	training|	0.9578|	0.9596
-SVM	validation|	0.9568|	0.9599
-randomforest	training|	0.9901|	0.9911
-randomforest	validation|	0.9709|	0.9739
-xgboost	training|	0.9889|	0.9901
-xgboost	validation|	0.9732|	0.976
-Naive Bayes	training|	0.9299|	0.9378
-Naive Bayes	validation|	0.9302|	0.9382
-Decision Tree	training|	0.9067|	0.9154
-Decision Tree	validation|	0.9067|	0.9154
+SVM	training|	**0.9578**|	0.9596
+SVM	validation|	**0.9568**|	0.9599
+randomforest	training|	**0.9901**|	0.9911
+randomforest	validation|	**0.9709**|	0.9739
+xgboost	training|	**0.9889**|	0.9901
+xgboost	validation|	**0.9732**|	0.976
+Naive Bayes	training|	**0.9299**|	0.9378
+Naive Bayes	validation|	**0.9302**|	0.9382
+Decision Tree	training|	**0.9067**|	0.9154
+Decision Tree	validation|	**0.9067**|	0.9154
   
 * Is your improvement significant?  
   
 使用xgboost模型,明顯比起null model,以及其他model來得好  
 * What is the challenge part of your project? 
   
-在這份報告中，一開始遇到的挑戰是找適合的資料，有些資料雖然是我們有興趣的，但這份預測結果其實沒有什麼意義，於是我們又另外再找了一份資料。在訓練的過程當中，變數選取的判斷也是一個很大的難題  
+在這份報告中，一開始遇到的挑戰是找適合的資料，有些資料雖然是我們有興趣的，也有些資料是unbalenced，且這份預測結果其實沒有什麼意義，於是我們又另外再找了一份資料。在訓練的過程當中，變數選取的判斷也是一個很大的難題  
 ## Reference
 * Code/implementation which you include/reference (__You should indicate in your presentation if you use code for others. Otherwise, cheating will result in 0 score for final project.__)  
   
@@ -115,8 +117,22 @@ Decision Tree	validation|	0.9067|	0.9154
 [6]Jiao Mao, Jingdong Bian, Wenqian Tian, Shishi Zhu, Tao Wei, Aili Li,  Zhenkai Liang, “Detecting Phishing Websites via Aggregation Analysis of Page Layouts”, Procedia Computer Science 129 (2018) 224–230  
 
 * Packages you use  
+    
+模型|套件
+----|----
+SVM|e1071、DMwR
+Random Forest|caret、randomForest
+XGboost|xgboost
+naive bayes|caret、e1071
+Decision Tree |caret、rpart
   
-caret,e1071,DMwR,randomForest,xgboost.rpart  
+
 * Related publications  
 
+[paper1](/docs/1-s2.0-S187705091830276X-main.pdf)
+[paper2](/docs/1109.1074.pdf)
+[paper3](/docs/aldiabat-2016-ijca-911061.pdf)
+[paper4](/docs/Effective Classification of Phishing Web Pages Based on New Rules by Using Extreme Learning Machines[#333818]-333655.pdf)
+[paper5](/docs/efficient-prediction-of-phishing-websites-using-supervised-learning-algorithms.pdf)
+[paper6](/docs/Mohammad2014_Article_PredictingPhishingWebsitesBase.pdf)
 
