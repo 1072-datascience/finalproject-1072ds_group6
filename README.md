@@ -126,12 +126,27 @@ Random Forest|caret、randomForest
 XGboost|xgboost
 naive bayes|caret、e1071
 Decision Tree |caret、rpart
-
+  
+  
 Plot function|Packages
 ---|---
 ggplot|ggplot2
 corrplot|corrplot
 rcorr|Hmisc
+  
+* Python packages
+  * model
+    * sklearn
+    * xgboost
+  * visualization
+    * numpy
+    * pandas
+    * matplotlib
+    * seaborn
+  * other
+    * random
+    * re
+    * tldextract
 
 
 * Related publications  
