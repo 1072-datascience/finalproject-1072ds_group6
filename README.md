@@ -9,7 +9,7 @@
 
 ### Goal
 A breif introduction about your project, i.e., what is your goal?
-*預測該網頁是否為釣魚網站
+* 預測該網頁是否為釣魚網站
 
 ### Demo 
 You should provide an example commend to reproduce your result
