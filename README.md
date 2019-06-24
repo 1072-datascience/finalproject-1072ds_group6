@@ -35,7 +35,7 @@ Rscript code/your_script.R --input data/training --output results/performance.ts
 * Input format  
   
 id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | double_slash_redirecting
-:-------------: | :-------------:|:-------------: | :-------------:|:-------------: | :-------------:
+-------------: | -------------:|-------------: | -------------:|-------------: | -------------:
 1|-1|1|1|1|-1
 2|1|1|1|1|1
   
