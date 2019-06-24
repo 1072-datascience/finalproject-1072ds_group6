@@ -56,8 +56,8 @@ id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | dou
 * Any preprocessing?  
   
 該筆資料已依據各別變數的特性整理為類別型資料，且資料完美無缺失值，只對資料另做分析。  
-![image](/plots/var_result/result_SSL_final.png)  
-![image](/plots/corrplot/corrplot_python.png)
+![plot](/plots/var_result/result_SSL_final.png)  
+![plot](/plots/corrplot/corrplot_python.png)
 
 ### code
 
