@@ -64,6 +64,15 @@ id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | dou
 * Which method do you use?  
   
 Decision Tree,Naive Bayes,SVM,Random Forest,Xgboost  
+
+```R
+svm <-  svm(formula =as.factor(Result) ~.,data = train)
+NBclassfier<-naiveBayes(Result ~ ., data=train_data,laplace=6)
+dt<-rpart(Result ~ ., data=train_data)
+xgb_cvmodel <- xgb.cv(data = dtrain, params = xgb.params, nfold = 10, nrounds = 1000, early_stopping_rounds = 20, print_every_n = 20)
+
+
+```
 * What is a null model for comparison?  
   
 由於在數據集上是平衡問題，我們利用先驗機率分佈，做出一個Null Model 理論上需要用輪盤法按照機率分配去產生Null Model分類器實作上，可以直接抽訓練數據打散之後去算準確率，就知道Null Model的準確率。  
