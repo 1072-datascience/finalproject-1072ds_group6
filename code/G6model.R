@@ -25,8 +25,6 @@ print("PROCESS")
 print(paste("output file:", out_f))
 print(paste("files      :", file))
 
-##input####
-input <- file
 
 #SVM--------------------------------------------------------------------------------
 #train1<-read.csv('C:\\Users\\user\\Desktop\\NCCU\\10702\\Data Science\\final_present\\fishing web\\train_phishing_website_data.csv',header=T)
@@ -124,7 +122,7 @@ F1.2<-round(2*pre1.2*sen1.2/(pre1.2+sen1.2),digit = 4)
 #F1.3<-round(2*pre1.3*sen1.3/(pre1.3+sen1.3),digit = 2) 
 #F1.4<-round(2*pre1.4*sen1.4/(pre1.4+sen1.4),digit = 2) 
 method<-c('SVM')
-set<-c('train','validation')
+set<-c('training','validation')
 Accuracy1<-c(training1,validation1)
 F1a<-c(F1.1,F1.2)
 output1<- data.frame(method=method,set=set,Accuracy_SVM=Accuracy1,F1=F1a)
@@ -412,6 +410,7 @@ perf <- perf %>%
   rbind(., output4) %>% 
   rbind(., output5)
 
-perf
+perf$accuracy <- round(perf$accuracy,4)
+perf$F1 <- round(perf$F1,4)
 
 write.table(perf, file=out_f, quote=FALSE, sep='\t', row.names = F)
