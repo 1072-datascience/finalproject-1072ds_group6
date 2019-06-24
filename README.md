@@ -35,7 +35,7 @@ Rscript code/your_script.R --input data/training --output results/performance.ts
 
 * Input format  
   
-id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | double_slash_redirecting|...|Result
+  * id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | double_slash_redirecting|...|Result
 -------------: | -------------:|-------------: | -------------:|-------------: | -------------:|--------:|--------:
 1|-1|1|1|1|-1|...|-1
 2|1|1|1|1|1|...|-1
@@ -54,7 +54,7 @@ id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | dou
 "DNSRecord"                   "web_traffic"                 "Page_Rank"                  
 "Google_Index"                "Links_pointing_to_page"  
 
-  * [Data_description](/docs/Phishing Websites Features.docx)
+  * [Data_description](/docs/Phishing_Websites_Features.docx)
 
 * Any preprocessing?  
   
@@ -81,7 +81,7 @@ xgb_cvmodel <- xgb.cv(data = dtrain, params = xgb.params, nfold = 10, nrounds = 
   * 由於在數據集上是平衡問題，我們利用先驗機率分佈，做出一個Null Model 理論上需要用輪盤法按照機率分配去產生Null Model分類器實作上，可以直接抽訓練數據打散之後去算準確率，就知道Null Model的準確率。  
 * How do your perform evaluation?  
   
-  *先取出10%的test data,剩下90%的data使用10 cross-validation找出Accuracy最高的模型，之後將最佳的模型xgboost放入test data做預測  
+  * 先取出10%的test data,剩下90%的data使用10 cross-validation找出Accuracy最高的模型，之後將最佳的模型xgboost放入test data做預測  
 ### results
 
 * Which metric do you use ?  
@@ -118,7 +118,7 @@ Decision Tree	validation|	**0.9067**|	0.9154
 
 * Packages you use  
     
-模型|套件
+Model|Packages
 ----|----
 SVM|e1071、DMwR
 Random Forest|caret、randomForest
