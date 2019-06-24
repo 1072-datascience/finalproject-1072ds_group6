@@ -118,21 +118,17 @@ Decision Tree	validation|	**0.9067**|	0.9154
   * [https://blog.gtwang.org/r/ggplot2-tutorial-layer-by-layer-plotting/3/](https://blog.gtwang.org/r/ggplot2-tutorial-layer-by-layer-plotting/3/)
 
 * Packages you use  
-
-Model|Packages
-----|----
-SVM|e1071、DMwR
-Random Forest|caret、randomForest
-XGboost|xgboost
-naive bayes|caret、e1071
-Decision Tree |caret、rpart
-  
-  
-Plot function|Packages
----|---
-ggplot|ggplot2
-corrplot|corrplot
-rcorr|Hmisc
+  * model
+    * e1071
+    * DMwR
+    * caret
+    * randomForest
+    * xgboost
+    * rpart
+  * visualization
+    * ggplot2
+    * corrplot
+    * Hmisc
   
 * Python packages
   * model
