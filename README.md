@@ -105,7 +105,7 @@ Decision Tree	validation|	**0.9067**|	0.9154
 使用xgboost模型,明顯比起null model,以及其他model來得好  
 * What is the challenge part of your project? 
   
-在這份報告中，一開始遇到的挑戰是找適合的資料，有些資料雖然是我們有興趣的，也有些資料是unbalenced，且這份預測結果其實沒有什麼意義，於是我們又另外再找了一份資料。在訓練的過程當中，變數選取的判斷也是一個很大的難題  
+在這份報告中，一開始遇到的挑戰是找適合的資料，有些資料雖然是我們有興趣的，但是這份資料是unbalenced，且這份預測結果其實沒有什麼意義，於是我們又另外再找了一份資料。在訓練的過程當中，變數選取的判斷也是一個很大的難題  
 ## Reference
 * Code/implementation which you include/reference (__You should indicate in your presentation if you use code for others. Otherwise, cheating will result in 0 score for final project.__)  
   
