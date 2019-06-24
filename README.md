@@ -34,7 +34,11 @@ Rscript code/your_script.R --input data/training --output results/performance.ts
 資料來自OpenML網站  
 * Input format  
   
-
+id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | double_slash_redirecting
+:-------------: | :-------------:|:-------------: | :-------------:|:-------------: | :-------------:
+1|-1|1|1|1|-1
+2|1|1|1|1|1
+  
   
 [1] "having_IP_Address"           "URL_Length"                  "Shortining_Service"          
 [4] "having_At_Symbol"            "double_slash_redirecting"    "Prefix_Suffix"              
