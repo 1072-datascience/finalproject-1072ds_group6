@@ -22,18 +22,17 @@ Rscript code/your_script.R --input data/training --output results/performance.ts
 ## Folder organization and its related information
 
 ### docs
-* Your presentation, 1072_datascience_FP_<yourID|groupName>.ppt/pptx/pdf, by **Jun. 25**
-* Any related document for the final project
-  * papers
-  * software user guide
+* Presentation powerpoint , 1072_datascience_FP_第六組.pptx
+* Some papers and feature description
+
 
 ### data
 
 * Source  
-  * 資料來自OpenML網站  
   * [https://www.openml.org/d/4534?fbclid=IwAR1YnS4O3MzI0NXfOJFvGAwGCcRmDIiQEoTBas7s5F4lFSRWkfe8DUiVpLw](https://www.openml.org/d/4534?fbclid=IwAR1YnS4O3MzI0NXfOJFvGAwGCcRmDIiQEoTBas7s5F4lFSRWkfe8DUiVpLw)  
+  * [https://archive.ics.uci.edu/ml/datasets/phishing+websites#](https://archive.ics.uci.edu/ml/datasets/phishing+websites#)
 
-* Input format  
+* Data format  
   
 id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | double_slash_redirecting|...|Result
 -------------: | -------------:|-------------: | -------------:|-------------: | -------------:|--------:|--------:
@@ -42,7 +41,7 @@ id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | dou
 ...|...|...|...|...|...|...|...
 11055|-1|-1|1|1|1|...|-1
   
-  * variables  
+* Features  
 "having_IP_Address"           "URL_Length"                  "Shortining_Service"          
 "having_At_Symbol"            "double_slash_redirecting"    "Prefix_Suffix"              
 "having_Sub_Domain"           "SSLfinal_State"              "Domain_registeration_length"  
@@ -54,7 +53,8 @@ id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | dou
 "DNSRecord"                   "web_traffic"                 "Page_Rank"                  
 "Google_Index"                "Links_pointing_to_page"  
 
-  * [Data_description](/docs/Phishing_Websites_Features.docx)
+* Features description
+[file](/docs/Phishing_Websites_Features.docx)
 
 * Any preprocessing?  
   
@@ -66,7 +66,7 @@ id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | dou
 
 * Which method do you use?  
   
-  * Decision Tree,Naive Bayes,SVM,Random Forest,Xgboost  
+  * Decision tree,Naive Bayes,SVM,Random forest,Xgboost  
 
 ```R
 svm <-  svm(formula =as.factor(Result) ~.,data = train)
@@ -106,7 +106,7 @@ Decision Tree	validation|	**0.9067**|	0.9154
   * 使用xgboost模型,明顯比起null model,以及其他model來得好  
 * What is the challenge part of your project? 
   
-  * 在這份報告中，一開始遇到的挑戰是找適合的資料，有些資料雖然是我們有興趣的，但是這份資料是unbalenced，且這份預測結果其實沒有什麼意義，於是我們又另外再找了一份資料。在訓練的過程當中，變數選取的判斷也是一個很大的難題  
+  * 在這份報告中，一開始遇到的挑戰是找適合的資料，有些資料雖然是我們有興趣的，但是這份資料是unbalenced，且預測結果其實沒有什麼實質意義，於是又另外再找了一份資料。在訓練的過程當中，變數選取的判斷也是一個很大的難題  
 ## Reference
 * Code/implementation which you include/reference (__You should indicate in your presentation if you use code for others. Otherwise, cheating will result in 0 score for final project.__)  
   * [https://www.rdocumentation.org/packages/caret/versions/4.47/topics/train](https://www.rdocumentation.org/packages/caret/versions/4.47/topics/train)
@@ -115,9 +115,10 @@ Decision Tree	validation|	**0.9067**|	0.9154
   * [https://www.rdocumentation.org/packages/e1071/versions/1.7-1/topics/svm](https://www.rdocumentation.org/packages/e1071/versions/1.7-1/topics/svm)
   * [https://xgboost.readthedocs.io/en/latest/R-package/xgboostPresentation.html](https://xgboost.readthedocs.io/en/latest/R-package/xgboostPresentation.html)
   * [https://machinelearningmastery.com/how-to-estimate-model-accuracy-in-r-using-the-caret-package/](https://machinelearningmastery.com/how-to-estimate-model-accuracy-in-r-using-the-caret-package/)
+  * [https://blog.gtwang.org/r/ggplot2-tutorial-layer-by-layer-plotting/3/](https://blog.gtwang.org/r/ggplot2-tutorial-layer-by-layer-plotting/3/)
 
 * Packages you use  
-    
+
 Model|Packages
 ----|----
 SVM|e1071、DMwR
@@ -125,7 +126,13 @@ Random Forest|caret、randomForest
 XGboost|xgboost
 naive bayes|caret、e1071
 Decision Tree |caret、rpart
-  
+
+Plot function|Packages
+---|---
+ggplot|ggplot2
+corrplot|corrplot
+rcorr|Hmisc
+
 
 * Related publications  
 
