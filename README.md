@@ -89,15 +89,15 @@ Accuracy
 
 method	set|	**accuracy**|	F1
 ------|-------------|-----
-SVM	training|	**0.9578**|	0.9596
+SVM	training|	0.9578|	0.9596
 SVM	validation|	**0.9568**|	0.9599
-randomforest	training|	**0.9901**|	0.9911
+randomforest	training|	0.9901|	0.9911
 randomforest	validation|	**0.9709**|	0.9739
-xgboost	training|	**0.9889**|	0.9901
+xgboost	training|	0.9889|	0.9901
 xgboost	validation|	**0.9732**|	0.976
-Naive Bayes	training|	**0.9299**|	0.9378
+Naive Bayes	training|	0.9299|	0.9378
 Naive Bayes	validation|	**0.9302**|	0.9382
-Decision Tree	training|	**0.9067**|	0.9154
+Decision Tree	training|	0.9067|	0.9154
 Decision Tree	validation|	**0.9067**|	0.9154
   
 * Is your improvement significant?  
