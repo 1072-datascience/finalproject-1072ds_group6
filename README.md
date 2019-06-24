@@ -34,22 +34,22 @@ Rscript code/your_script.R --input data/training --output results/performance.ts
 資料來自OpenML網站  
 * Input format  
   
-id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | double_slash_redirecting
--------------: | -------------:|-------------: | -------------:|-------------: | -------------:
-1|-1|1|1|1|-1
-2|1|1|1|1|1
+id | having_IP_Address | URL_Length | Shortining_Service| having_At_Symbol | double_slash_redirecting|...|Result
+-------------: | -------------:|-------------: | -------------:|-------------: | -------------:|--------:|--------:
+1|-1|1|1|1|-1|...|-1
+2|1|1|1|1|1|...|-1
   
-  
-[1] "having_IP_Address"           "URL_Length"                  "Shortining_Service"          
-[4] "having_At_Symbol"            "double_slash_redirecting"    "Prefix_Suffix"              
-[7] "having_Sub_Domain"           "SSLfinal_State"              "Domain_registeration_length"  
-[10] "Favicon"                     "port"                        "HTTPS_token"                
-[13] "Request_URL"                 "URL_of_Anchor"               "Links_in_tags"              
-[16] "SFH"                         "Submitting_to_email"         "Abnormal_URL"               
-[19] "Redirect"                    "on_mouseover"                "RightClick"                 
-[22] "popUpWidnow"                 "Iframe"                      "age_of_domain"              
-[25] "DNSRecord"                   "web_traffic"                 "Page_Rank"                  
-[28] "Google_Index"                "Links_pointing_to_page"  
+  variables  
+"having_IP_Address"           "URL_Length"                  "Shortining_Service"          
+"having_At_Symbol"            "double_slash_redirecting"    "Prefix_Suffix"              
+"having_Sub_Domain"           "SSLfinal_State"              "Domain_registeration_length"  
+"Favicon"                     "port"                        "HTTPS_token"                
+"Request_URL"                 "URL_of_Anchor"               "Links_in_tags"              
+"SFH"                         "Submitting_to_email"         "Abnormal_URL"               
+"Redirect"                    "on_mouseover"                "RightClick"                 
+"popUpWidnow"                 "Iframe"                      "age_of_domain"              
+"DNSRecord"                   "web_traffic"                 "Page_Rank"                  
+"Google_Index"                "Links_pointing_to_page"  
 
 * Any preprocessing?  
   
